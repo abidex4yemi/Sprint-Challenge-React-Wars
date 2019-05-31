@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { DisplayAllCharacters } from './components/DisplayAllCharacters/DisplayAllCharacters';
 
 class App extends Component {
 	constructor(props) {
@@ -30,6 +31,7 @@ class App extends Component {
 	};
 
 	render() {
+		const { starwarsChars } = this.state;
 		return (
 			<React.Fragment>
 				<header className="main-header">
@@ -39,7 +41,9 @@ class App extends Component {
 				</header>
 
 				<main class="main">
-					<div className="container">list goes here</div>
+					<div className="container">
+						<DisplayAllCharacters starwarsChars={starwarsChars} />
+					</div>
 				</main>
 
 				<footer className="footer">
