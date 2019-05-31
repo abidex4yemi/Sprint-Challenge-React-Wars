@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { DisplayAllCharacters } from './components/DisplayAllCharacters/DisplayAllCharacters';
-import { ButtonComponent } from './components/ButtonComponent';
+import { DisplayButtons } from './components/DisplayButtons/DisplayButtons';
 
 class App extends Component {
 	constructor(props) {
@@ -24,7 +24,11 @@ class App extends Component {
 				return res.json();
 			})
 			.then(data => {
-				this.setState({ starwarsChars: data.results });
+				this.setState({
+					starwarsChars: data.results,
+					previous: data.previous,
+					next: data.next
+				});
 			})
 			.catch(err => {
 				throw new Error(err);
@@ -32,7 +36,8 @@ class App extends Component {
 	};
 
 	render() {
-		const { starwarsChars } = this.state;
+		const { starwarsChars, previous, next } = this.state;
+
 		return (
 			<React.Fragment>
 				<header className="main-header">
@@ -44,10 +49,7 @@ class App extends Component {
 				<main className="main">
 					<div className="container">
 						<DisplayAllCharacters starwarsChars={starwarsChars} />
-
-						<ButtonComponent buttonText="Prev" getCharacters={this.getCharacters} className="btn prev" />
-
-						<ButtonComponent buttonText="Next" getCharacters={this.getCharacters} className="btn next" />
+						<DisplayButtons getCharacters={this.getCharacters} previous={previous} next={next} />
 					</div>
 				</main>
 
