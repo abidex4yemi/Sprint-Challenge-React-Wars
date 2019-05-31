@@ -11,6 +11,7 @@
   background: #131111e0;
   text-align: center;
   text-transform: capitalize;
+  padding: .5rem;
 }
 
 .single-char-list-container ul {
