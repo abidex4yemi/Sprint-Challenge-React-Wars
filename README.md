@@ -24,34 +24,49 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+- [X] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-- [ ] What does it mean to _think_ in react?
+*React JS is a JavaScript component-based library for building user interfaces (UI). Developed by Jordan Walke and now maintained by facebook.*
 
-- [ ] Describe state.
+*Native DOM operations are quite slow in terms of performance, and any application that has much of DOM operations in the background will render slowly. For instance, while using the Twitter mobile site, as you scroll down the page you see an option saying `show newer feeds`, the trending topics list change over time, so there are lots of DOM operations going on in the background. If the page has data that changes over time at high rates then there is a requirement for DOM updates to be very fast and also reflect in other parts of the UI if they use the same data. React solves this problem, without even having the page reload. It does by a concept called virtual DOM. When a page is rendered using React, the state of the DOM tree structure/hierarchy is stored, and when there is any updates to be made to the UI, it does a diff on the previous (old) DOM tree with the new one, and updates only the ones that have changed. In this way, lots of DOM operations/refreshes are reduced, improving performance considerably.*
 
-- [ ] Describe props.
+- [X] What does it mean to _think_ in react?
+
+*Thinking in React is a concept of building component based user interfaces and there are principle guidind the concept*
+
+1. A component should be a pure function which transforms data into a user interface. For a regular React web app, this means that a component takes some data and returns HTML.
+2. Components should be as `generic` as possible to promote reusability. To achieve this, you don’t want to bind the components which generate your HTML to a specific state management solution. Instead, you divide your components into container (smart) components and presentational (dumb) components
+3. A component should be performant. It should only render when its input has changed.
+
+
+- [X] Describe state.
+
+*State is like a data store to the ReactJS component. It is mostly used to update the component when user performed some action like clicking button etc.*
+
+- [X] Describe props.
+
+*props in react is used to control data into a component, generally props are set by parent and passed to child components and they are fixed throughout the component which means props are Read-Only*
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!)
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [X] Create a forked copy of this project.
+- [X] Add PM as collaborator on Github.
+- [X] Clone your OWN version of Repo (Not Lambda's by mistake!)
+- [X] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [X] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
+- [X] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
+- [X] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Implement the project on this Branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [X] Add your Project Manager as a Reviewer on the Pull-request.
+- [X] PM then will count the HW as done by  merging the branch back into master.
 
 Please note:
 
