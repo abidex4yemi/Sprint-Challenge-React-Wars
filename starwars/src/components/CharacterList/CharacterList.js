@@ -1,7 +1,8 @@
 import React from 'react';
+import './CharacterList.css';
 
 export const CharacterList = props => {
-	const { name, gender, height, birth_year, hair_color, eye_color, skin_color, mass, created, edited } = props;
+	const { name, gender, height, birth_year, hair_color, eye_color, created, edited } = props;
 
 	return (
 		<div className="single-char-list-container">
@@ -14,8 +15,6 @@ export const CharacterList = props => {
 				<li>{birth_year}</li>
 				<li>{hair_color}</li>
 				<li>{eye_color}</li>
-				<li>{skin_color}</li>
-				<li>{mass}</li>
 			</ul>
 			<footer>
 				<p>{created}</p>

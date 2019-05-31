@@ -1,11 +1,12 @@
 import React from 'react';
 import { ButtonComponent } from '../ButtonComponent/ButtonComponent';
+import './DisplayButtons.css';
 
 export const DisplayButtons = props => {
 	const { previous, next, getCharacters } = props;
 
 	return (
-		<div>
+		<div className="button-container">
 			<ButtonComponent
 				buttonText="Prev"
 				className="btn prev"
