@@ -13,6 +13,7 @@ export const DisplayButtons = props => {
 				handleClick={() => {
 					if (previous !== null) {
 						getCharacters(previous);
+						window.scrollTo(0, 0);
 					}
 				}}
 				previous={previous}
@@ -24,6 +25,7 @@ export const DisplayButtons = props => {
 				handleClick={() => {
 					if (next !== null) {
 						getCharacters(next);
+						window.scrollTo(0, 0);
 					}
 				}}
 			/>
