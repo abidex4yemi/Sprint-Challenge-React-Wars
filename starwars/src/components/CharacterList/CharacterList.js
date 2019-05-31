@@ -7,18 +7,18 @@ export const CharacterList = props => {
 	return (
 		<div className="single-char-list-container">
 			<header>
-				<h2>{name}</h2>
+				<h2>Name: {name}</h2>
 			</header>
 			<ul>
-				<li>{gender}</li>
-				<li>{height}</li>
-				<li>{birth_year}</li>
-				<li>{hair_color}</li>
-				<li>{eye_color}</li>
+				<li>Gender: {gender}</li>
+				<li>Height: {height}</li>
+				<li>Birth year: {birth_year}</li>
+				<li>Hair Color: {hair_color}</li>
+				<li>Eye Color: {eye_color}</li>
 			</ul>
 			<footer>
-				<p>{created}</p>
-				<p>{edited}</p>
+				<p>CreatedAt{created}</p>
+				<p>EditedAt: {edited}</p>
 			</footer>
 		</div>
 	);
