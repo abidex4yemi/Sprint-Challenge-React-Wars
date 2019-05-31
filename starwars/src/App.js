@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { DisplayAllCharacters } from './components/DisplayAllCharacters/DisplayAllCharacters';
+import { ButtonComponent } from './components/ButtonComponent';
 
 class App extends Component {
 	constructor(props) {
@@ -40,9 +41,13 @@ class App extends Component {
 					</div>
 				</header>
 
-				<main class="main">
+				<main className="main">
 					<div className="container">
 						<DisplayAllCharacters starwarsChars={starwarsChars} />
+
+						<ButtonComponent buttonText="Prev" getCharacters={this.getCharacters} className="btn prev" />
+
+						<ButtonComponent buttonText="Next" getCharacters={this.getCharacters} className="btn next" />
 					</div>
 				</main>
 
