@@ -18,3 +18,7 @@
   color: #f4f4f4;
   cursor: pointer;
 }
+
+.hidden {
+  display: none;
+}

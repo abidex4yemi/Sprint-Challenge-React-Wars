@@ -3,13 +3,16 @@ import { ButtonComponent } from '../ButtonComponent/ButtonComponent';
 import './DisplayButtons.css';
 
 export const DisplayButtons = props => {
-	const { previous, next, getCharacters } = props;
+	const { previous, next, getCharacters, hidden } = props;
+
+	const togglegePrev = previous === null ? hidden : '';
+	const toggleNext = next === null ? hidden : '';
 
 	return (
 		<div className="button-container">
 			<ButtonComponent
 				buttonText="Prev"
-				className="btn prev"
+				className={`btn prev ${togglegePrev}`}
 				handleClick={() => {
 					if (previous !== null) {
 						getCharacters(previous);
@@ -21,7 +24,7 @@ export const DisplayButtons = props => {
 
 			<ButtonComponent
 				buttonText="Next"
-				className="btn next"
+				className={`btn next ${toggleNext}`}
 				handleClick={() => {
 					if (next !== null) {
 						getCharacters(next);

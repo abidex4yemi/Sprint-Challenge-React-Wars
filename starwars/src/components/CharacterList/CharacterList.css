@@ -1,7 +1,7 @@
 .single-char-list-container {
   width: 28%;
   font-size: 1rem;
-  background: #443e3ee0;
+  background: #272b30;
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -16,7 +16,7 @@
 
 .single-char-list-container ul {
   padding: 1em;
-  color: rgba(250, 235, 215, 0.561);
+  color: rgba(255, 255, 255, 0.74);
 }
 
 .single-char-list-container footer {

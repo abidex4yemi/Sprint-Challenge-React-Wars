@@ -17,7 +17,7 @@ export const CharacterList = props => {
 				<li>Eye Color: {eye_color}</li>
 			</ul>
 			<footer>
-				<p>CreatedAt{created}</p>
+				<p>CreatedAt: {created}</p>
 				<p>EditedAt: {edited}</p>
 			</footer>
 		</div>

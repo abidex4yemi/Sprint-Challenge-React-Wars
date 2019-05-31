@@ -49,7 +49,7 @@ class App extends Component {
 				<main className="main">
 					<div className="container">
 						<DisplayAllCharacters starwarsChars={starwarsChars} />
-						<DisplayButtons getCharacters={this.getCharacters} previous={previous} next={next} />
+						<DisplayButtons getCharacters={this.getCharacters} previous={previous} next={next} hidden="hidden" />
 					</div>
 				</main>
 
