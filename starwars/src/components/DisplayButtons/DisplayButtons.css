@@ -1,0 +1,24 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 1rem;
+  border: 0;
+  border: 1px solid #f4f4f4;
+  margin: 0 10px;
+  padding: .5em 1.5em;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #443e3e;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
